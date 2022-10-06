@@ -4,11 +4,11 @@ import { PostCard, Categories, PostWidget } from '../components'
 
 const posts = [
   { title: 'NEXT.js Testing',
-    excerpt: 'Learn more...'
+    excerpt: 'Learn more... '
   },
   {
     title: 'Modern Blog App with NEXT and Tailwind',
-    excerpt: 'Learn more...',
+    excerpt: ' Learn more... ',
   }
 ]
 
