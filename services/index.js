@@ -1,4 +1,4 @@
-import { request, gul } from 'graphql-request';
+import { request, gql } from 'graphql-request';
 import React from 'react';
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;

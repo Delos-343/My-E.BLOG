@@ -3,17 +3,7 @@ import Head from 'next/head'
 import { PostCard, Categories, PostWidget } from '../components'
 import { getPosts } from '../services'
 
-const posts = [
-  { title: 'NEXT.js Testing',
-    excerpt: 'Learn more... '
-  },
-  {
-    title: 'Modern Blog App with NEXT and Tailwind',
-    excerpt: ' Learn more... ',
-  }
-]
-
-const Home: NextPage = () => {
+const Home: NextPage = ({ posts, post } : { posts: any, post: any }) => {
   return (
     <div className="container mx-auto px-10 mb-8 text-gray-100">
       <Head>
@@ -25,7 +15,7 @@ const Home: NextPage = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className='lg:col-span-8 col-span-1'>
           {posts.map((post) =>
-              <PostCard post={post} key={post.title} />
+              <PostCard post={post.node} key={post.title} />
           )}
         </div>
         <div className='lg:col-span-4 col-span-1'>
@@ -38,6 +28,15 @@ const Home: NextPage = () => {
 
     </div>
   )
+}
+
+export async function getStaticProps() {
+
+  const posts = (await getPosts()) || []
+
+  return {
+    props: { posts }
+  }
 }
 
 export default Home
