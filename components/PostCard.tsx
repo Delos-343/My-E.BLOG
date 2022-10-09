@@ -44,14 +44,14 @@ const PostCard = ({ post } : { post: any }) => {
             </span>
           </div>
         </div>
-        <p className='text-center text-lg text-white font-medium px-4 lg:px-20 mb-8'>
+        <p className='text-center text-lg text-white font-medium px-4 lg:px-20 mb-8 pt-12'>
           {post.excerpt}
         </p>
         <div className='text-center'>
           <Link href={`/post/${post.slug}`}>
             <span className='transition duration-500 ease transform hover:-translate-y-1 inline-block
                            bg-gray-900 bg-opacity-50 border-0 hover:border hover:border-orange-500 active:bg-red-600 font-semibold text-gray-200 px-8 py-3 cursor-pointer'>
-              Continue Reading...
+              Continue Reading &nbsp; ⇂
             </span>
           </Link>
         </div>
