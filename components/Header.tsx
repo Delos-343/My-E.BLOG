@@ -6,15 +6,15 @@ const Header = () => {
     const categories = [
         {
             name: 'React',
-            slug: 'react'
+            slug: 'react',
         },
         {
             name: 'NEXT',
-            slug: 'next'
+            slug: 'next',
         },
         {
             name: 'Frontend Development',
-            slug: 'frontend'
+            slug: 'frontend',
         }
     ]
 
@@ -29,13 +29,13 @@ const Header = () => {
                 </Link>
             </div>
             <div className='hidden md:float-left md:contents'>
-                {categories.map({category} => {
+                {categories.map((category) => (
                     <Link key={category.slug} href={`/category/${category.slug}`}>
                         <span className='md:float-right mt-2 align-center text-gray-100 ml-4 font-semibold cursor-pointer'>
                             {category.name}
                         </span>
                     </Link>
-                })}
+                ))}
             </div>
         </div>
     </div>
