@@ -47,13 +47,6 @@ const PostCard = ({ post } : { post: any }) => {
         <p className='text-center text-lg text-white font-medium px-4 lg:px-20 mb-4 pt-6'>
           {post.excerpt}
         </p>
-
-        <div className='container px-5 pt-6 pb-12'>
-          <p className='text-center text-gray-300 font-light truncate hidden md:block'>
-            {post.content.markdown}
-          </p>
-        </div>
-
         <div className='text-center'>
           <Link href={`/post/${post.slug}`}>
             <span className='transition duration-500 ease transform animate-bounce inline-block
