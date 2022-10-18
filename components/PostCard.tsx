@@ -17,7 +17,7 @@ const PostCard = ({ post } : { post: any }) => {
           />
         </div>
         <h1 className='transition duration-700 text-center text-gray-200 pt-5 mb-8 cursor-pointer
-                     hover:text-white text-4xl font-semibold'>
+                     hover:text-white text-2xl md:text-4xl font-semibold'>
           <Link href={`/post/${post.slug}`}>
             {post.title}
           </Link>
@@ -44,14 +44,14 @@ const PostCard = ({ post } : { post: any }) => {
             </span>
           </div>
         </div>
-        <p className='text-center text-lg text-white font-medium px-4 lg:px-20 mb-4 pt-6'>
+        <p className='text-center text-lg text-white font-medium px-4 lg:px-20 mb-12 pt-6'>
           {post.excerpt}
         </p>
         <div className='text-center'>
           <Link href={`/post/${post.slug}`}>
             <span className='transition duration-500 ease transform animate-bounce inline-block
-                             bg-gray-900 bg-opacity-50 border-0 hover:border hover:border-orange-500 active:bg-red-600 font-semibold text-gray-200 px-8 py-3 cursor-pointer'>
-              Continue Reading ⇂
+                             bg-gray-900 bg-opacity-50 border-0 hover:border hover:border-orange-500 active:bg-red-600 font-semibold text-gray-200 px-8 py-4 cursor-pointer'>
+              Continue Reading &nbsp; ⇂
             </span>
           </Link>
         </div>
