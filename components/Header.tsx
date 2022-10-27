@@ -5,16 +5,16 @@ const Header = () => {
 
     const categories = [
         {
-            name: 'React',
-            slug: 'react',
+            name: 'My Profile',
+            slug: 'profile',
         },
         {
-            name: 'NEXT',
-            slug: 'next',
+            name: 'Latest',
+            slug: 'latest',
         },
         {
-            name: 'Frontend Development',
-            slug: 'frontend',
+            name: 'Dashboard',
+            slug: 'dashboard',
         }
     ]
 
@@ -24,7 +24,7 @@ const Header = () => {
             <div className='md:float-left block'>
                 <Link href='/'>
                     <span className='cursor-pointer font-bold text-2xl text-gray-100'>
-                        Welcome to My Personal Blog
+                        Welcome, visitor.
                     </span>
                 </Link>
             </div>

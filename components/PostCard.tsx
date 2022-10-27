@@ -16,7 +16,7 @@ const PostCard = ({ post } : { post: any }) => {
             className='object-center absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg opacity-85'
           />
         </div>
-        <h1 className='transition duration-700 text-center text-gray-200 pt-5 mb-8 cursor-pointer
+        <h1 className='transition duration-700 text-center text-gray-200 pt-5 mb-2 cursor-pointer
                      hover:text-white text-2xl md:text-4xl font-semibold'>
           <Link href={`/post/${post.slug}`}>
             {post.title}
@@ -40,7 +40,7 @@ const PostCard = ({ post } : { post: any }) => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
             <span className='align-middle ml-2'>
-              {moment(post.createdAt).format("MM / DD / YYYY")}
+              {moment(post.createdAt).format("MM/DD/YYYY")}
             </span>
           </div>
         </div>
