@@ -44,7 +44,7 @@ const PostCard = ({ post } : { post: any }) => {
             </span>
           </div>
         </div>
-        <p className='text-center text-lg text-white font-medium px-4 lg:px-20 mb-12 pt-6'>
+        <p className='text-center text-2xl sm:text-4xl text-white font-medium px-4 lg:px-20 mb-12 pt-6'>
           {post.excerpt}
         </p>
         <div className='text-center'>
