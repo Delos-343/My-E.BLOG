@@ -10,7 +10,7 @@ const Categories = () => {
     getCategories().then((newCategories) =>[
       setCategories(newCategories)
     ])
-  }, [[]])
+  }, [])
   
 
   return (
