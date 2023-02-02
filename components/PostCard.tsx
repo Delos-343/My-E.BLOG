@@ -17,7 +17,7 @@ const PostCard = ({ post } : { post: any }) => {
           />
         </div>
         <h1 className='transition duration-700 text-center text-gray-200 pt-5 mb-2 cursor-pointer
-                     hover:text-white text-2xl md:text-4xl font-semibold'>
+                     hover:text-white text-3xl md:text-6xl font-semibold'>
           <Link href={`/post/${post.slug}`}>
             {post.title}
           </Link>
@@ -31,7 +31,7 @@ const PostCard = ({ post } : { post: any }) => {
               width="30px"
               className='align-middle rounded-full'
             />
-            <p className='inline align-middle text-white ml-4 text-lg'>
+            <p className='inline align-middle text-white ml-4 text-sm'>
               {post.author.name}
             </p>
           </div>
