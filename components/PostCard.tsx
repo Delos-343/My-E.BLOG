@@ -49,8 +49,7 @@ const PostCard = ({ post } : { post: any }) => {
         </p>
         <div className='text-center'>
           <Link href={`/post/${post.slug}`}>
-            <span className='transition duration-500 ease transform animate-bounce inline-block
-                             bg-gray-900 bg-opacity-50 border-0 hover:border hover:border-orange-500 active:bg-red-600 font-semibold text-gray-200 px-8 py-4 cursor-pointer'>
+            <span className='inline-block duration-500 ease transform hover:-translate-y-1 bg-gray-900 bg-opacity-50 border-0 hover:border hover:border-orange-500 active:bg-red-600 font-semibold text-gray-200 px-8 py-4 cursor-pointer'>
               Continue Reading &nbsp; ⇂
             </span>
           </Link>
