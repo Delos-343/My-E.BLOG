@@ -21,6 +21,7 @@
     "sass": "^1.55.0"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.29.5-appdir.0",
     "@types/node": "18.7.21",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
